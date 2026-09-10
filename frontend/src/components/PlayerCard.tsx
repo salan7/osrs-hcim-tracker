@@ -27,7 +27,7 @@ function PlayerCard({player, onClick}: PlayerCardProps) {
             {player.name}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary'}}>
-            Rank: {player.skills[0].rank}
+            Rank: {player.hcim_rank ?? "N/A"}
           </Typography>
 
         </CardContent>

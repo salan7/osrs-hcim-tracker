@@ -1,5 +1,7 @@
 export interface Player {
+    id: number;
     name: string;
+    hcim_rank: number | null;
     skills: Skill[];
     activities: Activity[];
 }

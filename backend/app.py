@@ -9,19 +9,21 @@ app = Flask(__name__)
 
 load_dotenv()
 
-conn = psycopg.connect(
-    dbname=os.getenv("DB_NAME"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD")
-)
-
 CORS(app)
+
+def get_db_connection():
+    return psycopg.connect(
+        dbname=os.getenv("DB_NAME"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD")
+    )
 
 #the HCIM API only returns a small amount of information, so we need to extract the unique HCIM rank and then add that to our player table
 def get_hcim_rank(player_name):
     response = requests.get(
-        f"https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.ws?player={player_name}"
-    )
+    f"https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.ws?player={player_name}",
+    timeout=10
+)
 
     #if the player has never been a hardcore account and we cannot retrieve their stats
     if response.status_code != 200:
@@ -39,6 +41,7 @@ def get_hcim_rank(player_name):
 
 #add the appropriate hardcore ranks to our players
 def update_hcim_ranks():
+    conn = get_db_connection()
     cursor = conn.cursor()
 
     cursor.execute("SELECT id, name FROM players")
@@ -59,6 +62,7 @@ def update_hcim_ranks():
         )
 
     conn.commit()
+    conn.close()
 
 #Retrieve hardcore ranks from the hiscores and apply to players
 @app.route("/api/update", methods=["POST"])
@@ -71,6 +75,7 @@ def update():
 #Retrieve players from the database, convert to JSON-appropriate format
 @app.route("/api/players")
 def players():
+    conn = get_db_connection()
     cursor = conn.cursor()
 
     #get player skills
@@ -106,6 +111,7 @@ def players():
             players_dict[player_id] = {
                 "id": player_id,
                 "name": player_name,
+                "hcim_rank":  hcim_rank,
                 "skills": [],
                 "activities": []
             }
@@ -152,6 +158,7 @@ def players():
 
 
     players = list(players_dict.values())
+    conn.close()
     return players
 
 
