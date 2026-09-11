@@ -5,6 +5,7 @@ import { useEffect, useState} from 'react';
 import type { Player } from '../types/Player';
 import { getPlayers, updatePlayer } from '../services/api';
 import type { Changes } from "../types/Changes";
+import PlayerDialog from '../components/PlayerDialog';
 
 interface HomeProps {
   searchQuery: string;
@@ -17,6 +18,7 @@ function Home({ searchQuery }: HomeProps){
   const [players, setPlayers] = useState<Player[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
   const [changes, setChanges] = useState<Changes | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
   useEffect(() => {
     getPlayers()
@@ -29,6 +31,15 @@ function Home({ searchQuery }: HomeProps){
 
   return (
     <Container>
+      {selectedPlayer && (
+        <PlayerDialog
+          player={selectedPlayer}
+          changes={changes}
+          open={dialogOpen}
+          onClose={() => setDialogOpen(false)}
+        />
+      )}
+
       <Grid container spacing = {2}>
         {filteredPlayers.map((player) => (
           <Grid 
@@ -42,6 +53,7 @@ function Home({ searchQuery }: HomeProps){
                   .then((data) => {
                     setSelectedPlayer(data.player);
                     setChanges(data.changes);
+                    setDialogOpen(true);
                   });
               }}  
             />
