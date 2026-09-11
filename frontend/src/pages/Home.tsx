@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import PlayerCard from "../components/PlayerCard";
 import { useEffect, useState} from 'react';
 import type { Player } from '../types/Player';
+import { getPlayers, updatePlayer } from '../services/api';
+import type { Changes } from "../types/Changes";
 
 interface HomeProps {
   searchQuery: string;
@@ -13,11 +15,12 @@ function Home({ searchQuery }: HomeProps){
   
 
   const [players, setPlayers] = useState<Player[]>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  const [changes, setChanges] = useState<Changes | null>(null);
 
   useEffect(() => {
-  fetch("http://127.0.0.1:5000/api/players")
-    .then((response) => response.json())
-    .then((data) => setPlayers(data));
+    getPlayers()
+      .then((data) => setPlayers(data));
   }, []);
 
   const filteredPlayers = players.filter(
@@ -34,7 +37,13 @@ function Home({ searchQuery }: HomeProps){
           >
             <PlayerCard
               player={player}
-              onClick={() => console.log("Player clicked")}  
+              onClick={() => {
+                updatePlayer(player.name)
+                  .then((data) => {
+                    setSelectedPlayer(data.player);
+                    setChanges(data.changes);
+                  });
+              }}  
             />
           </Grid>
         ))}
