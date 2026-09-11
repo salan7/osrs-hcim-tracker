@@ -295,11 +295,48 @@ def update_player_hiscores(player_name):
     if data is None:
         return
 
+    changes = {
+        "skills": [],
+        "activities": []
+    }
+
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    #get old skill values
+    cursor.execute(
+        """
+        SELECT skill_id, level, xp
+        FROM player_skills
+        WHERE player_id = %s
+        """,
+        (player_id,)
+    )
+
+    old_skills = cursor.fetchall()
+
+    old_skills = {
+        skill_id: {
+            "level": level,
+            "xp": xp
+        }
+        for skill_id, level, xp in old_skills
+    }
+
     #update skills
     for skill in data["skills"]:
+
+        old_skill = old_skills[skill["id"]]
+
+        if skill["xp"] > old_skill["xp"]:
+            changes["skills"].append({
+                "id": skill["id"],
+                "name": skill["name"],
+                "xp_gained": skill["xp"] - old_skill["xp"],
+                "old_level": old_skill["level"],
+                "new_level": skill["level"]
+            })
+
         cursor.execute(
             """
             UPDATE player_skills
@@ -318,8 +355,35 @@ def update_player_hiscores(player_name):
             )
         )
 
+    #get old activity values
+    cursor.execute(
+        """
+        SELECT activity_id, score
+        FROM player_activities
+        WHERE player_id = %s
+        """,
+        (player_id,)
+    )
+
+    old_activities = cursor.fetchall()
+
+    old_activities = {
+        activity_id: score
+        for activity_id, score in old_activities
+    }
+
     #update activities
     for activity in data["activities"]:
+
+        old_score = old_activities[activity["id"]]
+
+        if activity["score"] > old_score:
+            changes["activities"].append({
+                "id": activity["id"],
+                "name": activity["name"],
+                "score_gained": activity["score"] - old_score
+            })
+
         cursor.execute(
             """
             UPDATE player_activities
@@ -339,6 +403,8 @@ def update_player_hiscores(player_name):
     conn.commit()
     conn.close()
 
+    return changes
+
 def update_all_player_hiscores():
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -356,12 +422,118 @@ def update_all_player_hiscores():
 
         update_player_hiscores(player_name)
 
+def get_player(player_name):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    #get player info
+    cursor.execute(
+        """
+        SELECT id, name, hcim_rank
+        FROM players
+        WHERE name = %s
+        """,
+        (player_name,)
+    )
+
+    player_row = cursor.fetchone()
+
+    if player_row is None:
+        conn.close()
+        return None
+
+    player_id = player_row[0]
+
+    player = {
+        "id": player_row[0],
+        "name": player_row[1],
+        "hcim_rank": player_row[2],
+        "skills": [],
+        "activities": []
+    }
+
+    #get skills
+    cursor.execute(
+        """
+        SELECT
+            s.id,
+            s.name,
+            ps.rank,
+            ps.level,
+            ps.xp
+        FROM player_skills ps
+        JOIN skills s
+            ON ps.skill_id = s.id
+        WHERE ps.player_id = %s
+        """,
+        (player_id,)
+    )
+
+    skill_rows = cursor.fetchall()
+
+    for row in skill_rows:
+        player["skills"].append({
+            "id": row[0],
+            "name": row[1],
+            "rank": row[2],
+            "level": row[3],
+            "xp": row[4]
+        })
+
+    #get activities
+    cursor.execute(
+        """
+        SELECT
+            a.id,
+            a.name,
+            pa.rank,
+            pa.score
+        FROM player_activities pa
+        JOIN activities a
+            ON pa.activity_id = a.id
+        WHERE pa.player_id = %s
+        """,
+        (player_id,)
+    )
+
+    activity_rows = cursor.fetchall()
+
+    for row in activity_rows:
+        player["activities"].append({
+            "id": row[0],
+            "name": row[1],
+            "rank": row[2],
+            "score": row[3]
+        })
+
+    conn.close()
+
+    return player
+
 #Retrieve hardcore ranks from the hiscores and apply to players
 @app.route("/api/update", methods=["POST"])
 def update():
     update_hcim_ranks()
 
     return {"message": "HCIM ranks updated"}
+
+@app.route("/api/players/<player_name>/update", methods=["POST"])
+def update_player(player_name):
+    changes = update_player_hiscores(player_name)
+
+    if changes is None:
+        return {"error": "Could not update player"}, 404
+
+    #get the player's newly updated hiscore info
+    player = get_player(player_name)
+
+    if player is None:
+        return {"error": "Player not found"}, 404
+
+    return {
+        "player": player,
+        "changes": changes
+    }
 
 
 #Retrieve players from the database, convert to JSON-appropriate format
