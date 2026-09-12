@@ -4,6 +4,7 @@ import DialogContent from '@mui/material/DialogContent';
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import SkillTile from './SkillTile';
+import dialogBackground from "../assets/dialogBackground.png";
 
 import type { Player } from '../types/Player';
 import type { Changes } from '../types/Changes';
@@ -35,7 +36,8 @@ function PlayerDialog({
       slotProps={{
         paper: {
           sx: {
-            backgroundColor: "#28221d",
+            backgroundImage: `url(${dialogBackground})`,
+            backgroundRepeat: "repeat",
           },
         },
       }}
