@@ -32,43 +32,68 @@ function PlayerDialog({
       onClose={onClose}
       maxWidth="md"
       fullWidth
+      slotProps={{
+        paper: {
+          sx: {
+            backgroundColor: "#28221d",
+          },
+        },
+      }}
     >
-      <DialogTitle>
+      <DialogTitle sx={{
+          color: "yellow",
+          fontSize: "40px",
+          textAlign: "center"
+        }}>
         {player.name}
       </DialogTitle>
 
       <DialogContent>
 
-        {/* Display current, freshly updated stats */}
-        <Typography variant="h5">
+        {/* display current, freshly updated stats */}
+        <Typography variant="h5" sx={{
+          color: "yellow",
+          fontSize: "35px",
+          textAlign: "center"
+        }}>
           Player statistics:
         </Typography>
 
-        <Typography>
+        <Typography sx={{
+          color: "yellow",
+          fontSize: "35px",
+          textAlign: "center"
+        }}>
           HCIM Rank: {player.hcim_rank}
         </Typography>
 
 
-        {/* Main player skills */}
-        <Typography variant="h6">
+        {/* main player skills */}
+        <Typography variant="h6" sx={{
+          color: "yellow",
+          fontSize: "35px",
+          textAlign: "center"
+        }}>
           Skills
         </Typography>
 
-        <Grid container spacing={1}>
+        <Grid
+           sx={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 180px)",
+              justifyContent: "center",
+            }}
+          >
+            {skills.map((skill) => (
+              <SkillTile
+                key={skill.id}
+                skill={skill}
+              />
+            ))}
+          </Grid>
 
-          {skills.map((skill) => (
-            <Grid
-              size={{ xs: 4 }}
-              key={skill.id}
-            >
-              <SkillTile skill ={skill}/>
-            </Grid>
-          ))}
 
-        </Grid>
-
-
-        {/* Overall level*/}
+        {/* overall level*/}
         {overall && (
           <Grid container sx={{ justifyContent: "center" }}>
             <Grid size={{ xs: 4 }}>
@@ -77,9 +102,12 @@ function PlayerDialog({
           </Grid>
 )}
 
-        {/* Changes since the previous database update */}
-        <Typography variant="h5">
-          Changes Since Last Update
+        {/* changes since the previous database update */}
+        <Typography variant="h5" sx={{
+          color: "yellow",
+          fontSize: "35px",
+        }}>
+          Changes Since Last Update:
         </Typography>
 
         {changes && (
