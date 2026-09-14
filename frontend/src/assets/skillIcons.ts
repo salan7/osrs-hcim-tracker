@@ -51,3 +51,4 @@ export const skillIcons = {
   Sailing: SailingIcon,
   Overall: OverallIcon,
 };
+

@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
+import dialogBackground from "../assets/dialogBackground.png";
 
 interface NavBarProps {
   searchQuery : string;
@@ -56,9 +57,27 @@ export default function NavBar({ searchQuery, setSearchQuery }: NavBarProps) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static"
+          sx={{
+          backgroundImage: `url(${dialogBackground})`,
+          backgroundRepeat: "repeat",
+        }}>
         <Toolbar>
-          <Typography>
+          <Typography
+          sx={{
+          color: "yellow",
+          fontSize: "35px",
+          textShadow: `
+            -1px -1px 0 black,
+             0px -1px 0 black,
+             1px -1px 0 black,
+              -1px  0px 0 black,
+             1px  0px 0 black,
+             -1px  1px 0 black,
+              0px  1px 0 black,
+             1px  1px 0 black
+         `,
+        }}>
             OSRS HCIM Tracker
           </Typography>
           <Search>
@@ -66,7 +85,7 @@ export default function NavBar({ searchQuery, setSearchQuery }: NavBarProps) {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search for a player name..."
               inputProps={{ 'aria-label': 'search' }}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}

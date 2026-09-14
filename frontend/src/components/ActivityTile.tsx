@@ -1,16 +1,16 @@
 import Box from "@mui/material/Box"
 import Typography from "@mui/material/Typography";
-import type { Skill } from "../types/Player";
-import { skillIcons } from "../assets/skillIcons";
+import type { Activity } from "../types/Player";
 import skillTileBackground from "../assets/skillTileBackground.png";
+import { activityIcons } from "../assets/ActivityIcons";
 
-interface SkillTileProps {
-  skill: Skill;
+interface ActivityTileProps {
+  activity: Activity;
 }
 
-function SkillTile({ skill }: SkillTileProps) {
+function ActivityTile({ activity }: ActivityTileProps) {
 
-  const icon = skillIcons[skill.name as keyof typeof skillIcons];
+  const icon = activityIcons[activity.name as keyof typeof activityIcons];
 
   return (
     <Box
@@ -19,13 +19,14 @@ function SkillTile({ skill }: SkillTileProps) {
         height: "93px",
         backgroundImage: `url(${skillTileBackground})`,
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
       <img
         src={icon}
-        alt={`${skill.name} icon`}
+        alt={`${activity.name} icon`}
         style={{
           width: "20px",
           height: "20px",
@@ -35,7 +36,7 @@ function SkillTile({ skill }: SkillTileProps) {
       <Typography
         sx={{
           color: "yellow",
-          fontSize: "20px",
+          fontSize: activity.name.length > 22 ? "14px" : "20px",
           textShadow: `
             -1px -1px 0 black,
              0px -1px 0 black,
@@ -48,37 +49,7 @@ function SkillTile({ skill }: SkillTileProps) {
          `,
         }}
       >
-        {skill.name}
-      </Typography>
-
-      <Typography
-        sx={{
-          color: "yellow",
-          fontSize: "20px",
-          marginLeft: "3px",
-          textShadow: `
-            -1px -1px 0 black,
-             0px -1px 0 black,
-             1px -1px 0 black,
-              -1px  0px 0 black,
-             1px  0px 0 black,
-             -1px  1px 0 black,
-              0px  1px 0 black,
-             1px  1px 0 black
-         `,
-        }}
-      >
-        {skill.level}
-      </Typography>
-
-      <Typography
-        sx={{
-          color: "black",
-          fontSize: "20px",
-          
-        }}
-      >
-        /
+        {activity.name}
       </Typography>
 
       <Typography
@@ -97,10 +68,10 @@ function SkillTile({ skill }: SkillTileProps) {
          `,
         }}
       >
-        99
+        {activity.score}
       </Typography>
     </Box>
   );
 }
 
-export default SkillTile;
+export default ActivityTile;
