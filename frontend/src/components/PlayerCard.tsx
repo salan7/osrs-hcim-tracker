@@ -6,18 +6,22 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from "@mui/material";
 import statsImage from "../assets/stats.png";
 import cardInfo_Background from "../assets/cardInfo_Background.png"
-
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 interface PlayerCardProps {
   player: Player;
   onClick: () => void;
+  loading: boolean;
+  disabled: boolean;
 }
 
-function PlayerCard({player, onClick}: PlayerCardProps) {
+
+function PlayerCard({player, onClick, loading, disabled }: PlayerCardProps) {
 
   return( 
-    <Card>
-      <CardActionArea onClick={onClick}>
+    <Card sx={{ position: "relative"}}>
+      <CardActionArea onClick={onClick} disabled={disabled}>
         <CardMedia
         component="img"
         height="500"
@@ -71,6 +75,25 @@ function PlayerCard({player, onClick}: PlayerCardProps) {
 
         </CardContent>
       </CardActionArea>
+
+      {loading && (
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "rgba(0, 0, 0, 0.65)",
+            zIndex: 1,
+          }}
+        >
+          <CircularProgress
+            sx={{ color: "yellow" }}
+            aria-label="Updating player"
+          />
+        </Box>
+      )}
 
     </Card>);
 }
