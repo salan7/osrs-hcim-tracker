@@ -97,7 +97,7 @@ function SkillTile({ skill }: SkillTileProps) {
          `,
         }}
       >
-        99
+        {skill.name === "Overall" ? 2376 : 99}
       </Typography>
     </Box>
   );
