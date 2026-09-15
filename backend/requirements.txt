@@ -4,3 +4,5 @@ psycopg[binary]
 requests
 python-dotenv
 beautifulsoup4
+pytest
+pytest-cov
