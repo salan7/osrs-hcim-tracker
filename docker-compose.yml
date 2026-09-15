@@ -18,6 +18,24 @@ services:
       timeout: 5s
       retries: 5
 
+  backend-tests:
+    build: ./backend
+    container_name: hcim-backend-tests
+    environment:
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+    command: ["python", "-m", "pytest"]
+
+  frontend-tests:
+    build:
+      context: ./frontend
+      target: build
+    container_name: hcim-frontend-tests
+    command: ["npm", "test", "--", "--run"]
+
   backend:
     build: ./backend
     container_name: hcim-backend
@@ -32,6 +50,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      backend-tests:
+        condition: service_completed_successfully
 
   frontend:
     build: ./frontend
@@ -39,7 +59,10 @@ services:
     ports:
       - "5173:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_started
+      frontend-tests:
+        condition: service_completed_successfully
 
 volumes:
   postgres_data:

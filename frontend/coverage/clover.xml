@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1789494501976" clover="3.2.0">
+  <project timestamp="1789494501976" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="16" coveredconditionals="16" methods="29" coveredmethods="29" elements="90" coveredelements="90" complexity="0" loc="45" ncloc="45" packages="6" files="129" classes="129"/>
+    <package name="assets">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ActivityIcons.ts" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\ActivityIcons.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="93" count="3" type="stmt"/>
+      </file>
+      <file name="cardInfo_Background.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\cardInfo_Background.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="dialogBackground.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\dialogBackground.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="skillIcons.ts" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\skillIcons.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="27" count="3" type="stmt"/>
+      </file>
+      <file name="skillTileBackground.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\skillTileBackground.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="stats.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\stats.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.Activity_Icons">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Abyssal_Sire_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Abyssal_Sire_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Alchemical_Hydra_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Alchemical_Hydra_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Amoxliatl_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Amoxliatl_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Araxxor_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Araxxor_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Artio_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Artio_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Barrows_Chests_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Barrows_Chests_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bounty_Hunter_(Legacy)_-_Hunter_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Bounty_Hunter_(Legacy)_-_Hunter_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bounty_Hunter_(Legacy)_-_Rogue_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Bounty_Hunter_(Legacy)_-_Rogue_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bounty_Hunter_-_Hunter_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Bounty_Hunter_-_Hunter_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bounty_Hunter_-_Rogue_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Bounty_Hunter_-_Rogue_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Brutus_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Brutus_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Bryophyta_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Bryophyta_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Callisto_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Callisto_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Calvar'ion_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Calvar'ion_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Cerberus_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Cerberus_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Chambers_of_Xeric_Challenge_Mode_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Chambers_of_Xeric_Challenge_Mode_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Chambers_of_Xeric_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Chambers_of_Xeric_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Chaos_Elemental_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Chaos_Elemental_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Chaos_Fanatic_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Chaos_Fanatic_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(all)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(all)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(beginner)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(beginner)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(easy)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(easy)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(elite)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(elite)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(hard)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(hard)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(master)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(master)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Clue_Scrolls_(medium)_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Clue_Scrolls_(medium)_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Collections_Logged_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Collections_Logged_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Colosseum_Glory_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Colosseum_Glory_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Commander_Zilyana_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Commander_Zilyana_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Corporeal_Beast_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Corporeal_Beast_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Crazy_Archaeologist_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Crazy_Archaeologist_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Dagannoth_Prime_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Dagannoth_Prime_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Dagannoth_Rex_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Dagannoth_Rex_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Dagannoth_Supreme_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Dagannoth_Supreme_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Deadman_Points_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Deadman_Points_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Deranged_Archaeologist_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Deranged_Archaeologist_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Doom_of_Mokhaiotl_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Doom_of_Mokhaiotl_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Duke_Sucellus_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Duke_Sucellus_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="General_Graardor_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\General_Graardor_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Giant_Mole_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Giant_Mole_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Grid_Points_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Grid_Points_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Grotesque_Guardians_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Grotesque_Guardians_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Hespori_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Hespori_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="K'ril_Tsutsaroth_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\K'ril_Tsutsaroth_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Kalphite_Queen_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Kalphite_Queen_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="King_Black_Dragon_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\King_Black_Dragon_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Kraken_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Kraken_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Kree'Arra_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Kree'Arra_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="LMS_-_Rank_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\LMS_-_Rank_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="League_Points_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\League_Points_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Lunar_Chests_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Lunar_Chests_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Mad_Angel_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Mad_Angel_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Maggot_King_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Maggot_King_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Mimic_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Mimic_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Nex_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Nex_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Nightmare_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Nightmare_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Obor_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Obor_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Phantom_Muspah_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Phantom_Muspah_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Phosani's_Nightmare_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Phosani's_Nightmare_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="PvP_Arena_-_Rank_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\PvP_Arena_-_Rank_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Rifts_closed_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Rifts_closed_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Sarachnis_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Sarachnis_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Scorpia_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Scorpia_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Scurrius_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Scurrius_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Shellbane_Gryphon_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Shellbane_Gryphon_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Skotizo_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Skotizo_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Sol_Heredit_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Sol_Heredit_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Soul_Wars_Zeal_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Soul_Wars_Zeal_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Spindel_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Spindel_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tempoross_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Tempoross_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Corrupted_Gauntlet_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Corrupted_Gauntlet_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Gauntlet_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Gauntlet_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Hueycoatl_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Hueycoatl_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Leviathan_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Leviathan_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Royal_Titans_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Royal_Titans_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="The_Whisperer_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\The_Whisperer_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Theatre_of_Blood_Hard_Mode_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Theatre_of_Blood_Hard_Mode_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Theatre_of_Blood_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Theatre_of_Blood_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Thermonuclear_Smoke_Devil_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Thermonuclear_Smoke_Devil_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tombs_of_Amascut_Expert_Mode_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Tombs_of_Amascut_Expert_Mode_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tombs_of_Amascut_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Tombs_of_Amascut_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="TzKal-Zuk_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\TzKal-Zuk_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="TzTok-Jad_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\TzTok-Jad_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Vardorvis_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Vardorvis_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Venenatis_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Venenatis_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Vet'ion_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Vet'ion_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Vorkath_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Vorkath_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Wintertodt_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Wintertodt_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Yama_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Yama_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Zalcano_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Zalcano_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Zulrah_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Activity_Icons\Zulrah_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="assets.Skill_Icons">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Agility_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Agility_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Attack_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Attack_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Construction_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Construction_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Cooking_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Cooking_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Crafting_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Crafting_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Defence_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Defence_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Farming_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Farming_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Firemaking_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Firemaking_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Fishing_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Fishing_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Fletching_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Fletching_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Herblore_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Herblore_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Hitpoints_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Hitpoints_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Hunter_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Hunter_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Magic_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Magic_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Mining_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Mining_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Overall_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Overall_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Prayer_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Prayer_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Ranged_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Ranged_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Runecraft_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Runecraft_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Sailing_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Sailing_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Slayer_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Slayer_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Smithing_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Smithing_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Strength_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Strength_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Thieving_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Thieving_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Woodcutting_icon.png" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\assets\Skill_Icons\Woodcutting_icon.png">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="12" methods="15" coveredmethods="15"/>
+      <file name="ActivityTile.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\components\ActivityTile.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="15" count="5" type="stmt"/>
+      </file>
+      <file name="NavBar.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\components\NavBar.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+      </file>
+      <file name="PlayerCard.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\components\PlayerCard.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="22" count="37" type="stmt"/>
+      </file>
+      <file name="PlayerDialog.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\components\PlayerDialog.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>
+        <line num="27" count="16" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
+        <line num="31" count="16" type="stmt"/>
+        <line num="134" count="2" type="stmt"/>
+        <line num="183" count="1" type="stmt"/>
+        <line num="202" count="4" type="stmt"/>
+        <line num="225" count="3" type="stmt"/>
+      </file>
+      <file name="SkillTile.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\components\SkillTile.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="15" count="8" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+      <file name="Home.tsx" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\pages\Home.tsx">
+        <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10"/>
+        <line num="20" count="23" type="stmt"/>
+        <line num="21" count="23" type="stmt"/>
+        <line num="22" count="23" type="stmt"/>
+        <line num="23" count="23" type="stmt"/>
+        <line num="24" count="23" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="27" count="23" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="33" count="23" type="stmt"/>
+        <line num="34" count="32" type="stmt"/>
+        <line num="37" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="58" count="16" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="71" count="31" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="81" count="4" type="stmt"/>
+        <line num="83" count="4" type="stmt"/>
+        <line num="84" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="api.ts" path="C:\Users\Sam\Desktop\HCIM Database\frontend\src\services\api.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
