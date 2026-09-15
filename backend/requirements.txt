@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+psycopg[binary]
+requests
+python-dotenv
+beautifulsoup4

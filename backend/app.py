@@ -5,11 +5,14 @@ import requests
 from dotenv import load_dotenv
 import os
 import time
+from pathlib import Path
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
-load_dotenv()
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+load_dotenv(BASE_DIR / ".env")
 
 CORS(app)
 
@@ -113,7 +116,9 @@ def get_db_connection():
     return psycopg.connect(
         dbname=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD")
+        password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
+        port=os.getenv("DB_PORT")
     )
 
 def add_hcim_players(players):
@@ -626,4 +631,4 @@ def players():
     return players
 
 if __name__ == "__main__":
-     app.run(debug=True)
+     app.run(host="0.0.0.0", port=5000, debug=True)

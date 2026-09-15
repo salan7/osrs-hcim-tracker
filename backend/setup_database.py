@@ -40,6 +40,11 @@ if __name__ == "__main__":
         players = get_all_hcim_players()
 
     print("Total players:", len(players))
+
+    if not players:
+        print("No players found. Stopping setup.")
+        exit()
+
     print("First player:", players[0])
     print("Last player:", players[-1])
 
